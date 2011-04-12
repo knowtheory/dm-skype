@@ -24,7 +24,7 @@ module Skype
     property :message_button_uri,     Text    # message_button_uri, Text
     property :message_type,           Integer # message_type, Integer
     property :window_size,            Integer # window_size, Integer
-    #property :chatmsg_guid BLOB,             # chatmsg_guid BLOB,
+    property :chatmsg_guid,           Binary  # chatmsg_guid BLOB,
     property :notification_id,        Integer # notification_id, Integer
     property :event_flags,            Integer # event_flags INTEGER);
 

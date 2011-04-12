@@ -9,7 +9,7 @@ module Skype
     property :author,                             Text    # author, Text
     property :from_dispname,                      Text    # from_dispname, Text
     property :author_was_live,                    Integer # author_was_live, Integer
-    #property :guid BLOB,                                                   # guid BLOB,
+    property :guid,                               Binary  # guid BLOB,
     property :dialog_partner,                     Text    # dialog_partner, Text
     property :timestamp,                          Integer # timestamp, Integer
     property :type,                               Integer # type, Integer

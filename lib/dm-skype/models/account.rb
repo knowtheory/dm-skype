@@ -62,8 +62,8 @@ module Skype
     property :given_displayname,          Text    # given_displayname, Text
     property :availability,               Integer # availability, Integer
     property :lastonline_timestamp,       Integer # lastonline_timestamp, Integer
-    #property :capabilities BLOB,                 #     capabilities BLOB,
-    #property :avatar_image BLOB,                 #     avatar_image BLOB,
+    property :capabilities,               Binary  #     capabilities BLOB,
+    property :avatar_image,               Binary  #     avatar_image BLOB,
     property :assigned_speeddial,         Text    # assigned_speeddial, Text
     property :lastused_timestamp,         Integer # lastused_timestamp, Integer
     property :authrequest_count,          Integer # authrequest_count, Integer
@@ -72,27 +72,27 @@ module Skype
     property :avatar_timestamp,           Integer # avatar_timestamp, Integer
     property :mood_timestamp,             Integer # mood_timestamp, Integer
     property :rich_mood_text,             Text    # rich_mood_text, Text
-    #property :synced_email BLOB,                 #     synced_email BLOB,
+    property :synced_email,               Binary  #     synced_email BLOB,
     property :set_availability,           Integer # set_availability, Integer
-    #property :options_change_future BLOB,        #     options_change_future BLOB,
+    property :options_change_future,      Binary  #     options_change_future BLOB,
     property :authorized_time,            Integer # authorized_time, Integer
     property :sent_authrequest,           Text    # sent_authrequest, Text
     property :sent_authrequest_time,      Integer # sent_authrequest_time, Integer
     property :sent_authrequest_serial,    Integer #     sent_authrequest_serial, Integer
-    #property :buddyblob BLOB,                    #     buddyblob BLOB,
-    #property :cbl_future BLOB,                   #     cbl_future BLOB,
+    property :buddyblob,                  Binary  #     buddyblob BLOB,
+    property :cbl_future,                 Binary  #     cbl_future BLOB,
     property :node_capabilities,          Integer # node_capabilities, Integer
     property :node_capabilities_and,      Integer # node_capabilities_and, Integer
     property :revoked_auth,               Integer # revoked_auth, Integer
     property :added_in_shared_group,      Integer # added_in_shared_group, Integer
     property :in_shared_group,            Integer # in_shared_group, Integer
-    #property :authreq_history BLOB,              #     authreq_history BLOB,
-    #property :profile_attachments BLOB,          #     profile_attachments BLOB,
+    property :authreq_history,            Binary  #     authreq_history BLOB,
+    property :profile_attachments,        Binary  #     profile_attachments BLOB,
     property :stack_version,              Integer # stack_version, Integer
     property :offline_authreq_id,         Integer # offline_authreq_id, Integer
-    #property :verified_email BLOB,               #     verified_email BLOB,
-    #property :verified_company BLOB,             #     verified_company BLOB,
-    #property :cbl_profile_blob BLOB);            #     cbl_profile_blob BLOB);
+    property :verified_email,             Binary  #     verified_email BLOB,
+    property :verified_company,           Binary  #     verified_company BLOB,
+    property :cbl_profile_blob,           Binary  #     cbl_profile_blob BLOB);
 
     # CREATE INDEX IX_Accounts_skypename ON Accounts (skypename);
   end

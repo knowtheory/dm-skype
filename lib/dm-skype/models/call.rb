@@ -29,7 +29,7 @@ module Skype
     property :premium_video_is_grace_period,  Integer # premium_video_is_grace_period, Integer
     property :is_premium_video_sponsor,       Integer # is_premium_video_sponsor, Integer
     property :premium_video_sponsor_list,     Text    # premium_video_sponsor_list, Text
-    #property :old_members BLOB,                      # old_members BLOB,
+    property :old_members,                    Binary  # old_members BLOB,
     property :partner_handle,                 Text    # partner_handle, Text
     property :partner_dispname,               Text    # partner_dispname, Text
     property :type,                           Integer # type, Integer
@@ -38,9 +38,9 @@ module Skype
     property :failurecode,                    Integer # failurecode, Integer
     property :pstn_number,                    Text    # pstn_number, Text
     property :old_duration,                   Integer # old_duration, Integer
-    #property :conf_participants BLOB,                # conf_participants BLOB,
+    property :conf_participants,              Binary  # conf_participants BLOB,
     property :pstn_status,                    Text    # pstn_status, Text
-    #property :members BLOB,                          # members BLOB,
+    property :members,                        Binary  # members BLOB,
     property :conv_dbid,                      Integer # conv_dbid INTEGER);
 
     # CREATE INDEX IX_Calls_begin_timestamp ON Calls (begin_timestamp);

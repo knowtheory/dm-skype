@@ -23,7 +23,7 @@ module Skype
     property :topic,                          Text    # topic, Text
     property :topic_xml,                      Text    # topic_xml, Text
     property :guidelines,                     Text    # guidelines, Text
-    # property :picture BLOB,                                          # picture BLOB,
+    property :picture,                        Binary  # picture BLOB,
     property :alertstring,                    Text    # alertstring, Text
     property :is_bookmarked,                  Integer # is_bookmarked, Integer
     property :passwordhint,                   Text    # passwordhint, Text
@@ -32,7 +32,7 @@ module Skype
     property :unconsumed_elevated_msg,        Integer # unconsumed_elevated_msg, Integer
     property :unconsumed_msg_voice,           Integer # unconsumed_msg_voice, Integer
     property :activemembers,                  Text    # activemembers, Text
-    # property :state_data BLOB,                       # state_data BLOB,
+    property :state_data,                     Binary  # state_data BLOB,
     property :lifesigns,                      Integer # lifesigns, Integer
     property :last_change,                    Integer # last_change, Integer
     property :first_unread_message,           Integer # first_unread_message, Integer

@@ -40,7 +40,7 @@ module Skype
     property :meta_name,                             Text    # meta_name, Text
     property :meta_topic,                            Text    # meta_topic, Text
     property :meta_guidelines,                       Text    # meta_guidelines, Text
-    #property :meta_picture BLOB,                            # meta_picture BLOB,
+    property :meta_picture,                          Binary  # meta_picture BLOB,
     property :premium_video_status,                  Integer # premium_video_status, Integer
     property :premium_video_is_grace_period,         Integer # premium_video_is_grace_period, Integer
     property :guid,                                  Text    # guid, Text

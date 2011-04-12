@@ -15,7 +15,7 @@ module Skype
     property :associated_chat,                Text    # associated_chat, Text
     property :members,                        Text    # members, Text
     property :cbl_id,                         Integer # cbl_id, Integer
-    #property :cbl_blob BLOB,                                    # cbl_blob BLOB,
+    property :cbl_blob,                       Binary  # cbl_blob BLOB,
     property :fixed,                          Integer # fixed, Integer
     property :keep_sharedgroup_contacts,      Integer # keep_sharedgroup_contacts, Integer
     property :chats,                          Text    # chats, Text
