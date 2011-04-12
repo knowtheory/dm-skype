@@ -54,5 +54,6 @@ module Skype
 
     # CREATE INDEX IX_CallMembers_call_name ON CallMembers (call_name);
     # CREATE INDEX IX_CallMembers_identity ON CallMembers (identity);
+    belongs_to :contact, :child_key => [:identity], :parent_key => [:skypename]
   end
 end

@@ -57,5 +57,6 @@ module Skype
     # CREATE INDEX IX_Messages_timestamp_convo_id_type ON Messages (timestamp,
     #     convo_id,
     #     type);
+    belongs_to :contact, :child_key => [:author], :parent_key => [:skypename]
   end
 end

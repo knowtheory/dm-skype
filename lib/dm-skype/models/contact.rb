@@ -100,5 +100,11 @@ module Skype
 
     # CREATE INDEX IX_Contacts_buddystatus ON Contacts (buddystatus);
     # CREATE INDEX IX_Contacts_skypename ON Contacts (skypename);
+    
+    has n, :messages, :child_key => [:author], :parent_key => [:skypename]
+    
+    def avatar # images seem to start w/ an unnecessary null char.
+      avatar_image.force_encoding("BINARY").sub(/^\x00/,'')
+    end
   end
 end

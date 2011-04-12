@@ -13,5 +13,7 @@ module Skype
 
     # CREATE INDEX IX_ChatMembers_chatname ON ChatMembers (chatname);
     # CREATE INDEX IX_ChatMembers_identity ON ChatMembers (identity);
+    
+    belongs_to :contact, :child_key => [:identity], :parent_key => [:skypename]
   end
 end
