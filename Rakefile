@@ -12,7 +12,6 @@ begin
     gem.email       = 'gems@knowtheory.net'
     gem.homepage    = 'http://github.com/knowtheory/%s' % gem.name
     gem.authors     = [ 'Ted Han' ]
-    gem.has_rdoc    = 'yard'
   end
 
   Jeweler::GemcutterTasks.new
